@@ -20,8 +20,8 @@ jobs:
             run: echo "Running on master push"
 
     on_pull_request:
-        runs-on: ubuntu-latest
         if: github.event_name == 'pull_request'
+        runs-on: ubuntu-latest
         steps:
           - name: "Running on master pull request"
             run: echo "Running on master pull request"
