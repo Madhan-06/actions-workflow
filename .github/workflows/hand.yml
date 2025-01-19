@@ -2,8 +2,8 @@ name: "hand_on_push"
 
 on:
   push:
-    branches:
-      - master
+     branches:
+         - master
       
 jobs: 
     on_push:
