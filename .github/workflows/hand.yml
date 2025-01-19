@@ -1,0 +1,30 @@
+name: "hand_on_push"
+
+on:
+  push:
+     branches:
+         - master
+         - test
+
+  pull_request:
+    branches:
+      - master
+
+  WORKFLOW_DISPATCH: 
+        
+            
+            
+jobs: 
+    on_push:
+        if: github.event_name == 'push'
+        runs-on: ubuntu-latest
+        steps:
+          - name: "Running on master push"
+            run: echo "Running on master push"
+
+    on_pull_request:
+        if: github.event_name == 'pull_request'
+        runs-on: ubuntu-latest
+        steps:
+          - name: "Running on master pull request"
+            run: echo "Running on master pull request"
