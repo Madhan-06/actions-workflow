@@ -1,7 +1,5 @@
 name: "MultiEevent Pipeline" 
 
-
-
 on:
   push: 
     branches:
