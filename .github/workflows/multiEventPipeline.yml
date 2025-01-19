@@ -1,9 +1,11 @@
 name: "MultiEevent Pipeline" 
 
+
+
 on:
   push: 
-     branches:
-          - master
+    branches:
+        - master
       
       
 jobs:
